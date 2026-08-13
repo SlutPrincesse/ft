@@ -1,0 +1,29 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "bundle": {
+    "active": false,
+    "targets": "all"
+  },
+  "productName": "PolyShard-P9",
+  "version": "0.1.0",
+  "identifier": "com.polyshard.p9",
+  "app": {
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "title": "PolyShard-P9",
+        "width": 1600,
+        "height": 1000,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+target/
+dist/
+dist-ssr/
+
+# Build outputs
+*.log
+*.pid
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tauri
+src-tauri/target/
+src-tauri/WixTools/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temp
+/tmp/
+polyshard-ingest/
+filestore/
