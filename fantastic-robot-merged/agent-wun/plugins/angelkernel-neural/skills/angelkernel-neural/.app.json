@@ -1,7 +1,0 @@
-{
-  "app": "angelkernel-neural",
-  "version": "4.0.0",
-  "type": "plugin",
-  "entry": "dist/index.js",
-  "description": "AngelKernel v4.0 Neural — Autonomous Neural Cognition OS as an OpenCode plugin"
-}

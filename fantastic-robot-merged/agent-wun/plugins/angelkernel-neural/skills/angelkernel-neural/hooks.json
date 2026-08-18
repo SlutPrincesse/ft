@@ -1,9 +1,0 @@
-{
-  "angelkernel-neural": {
-    "onInstall": ["angel-install"],
-    "onEnable": ["angel-hooks fire plugin:enabled '{\"plugin\":\"angelkernel-neural\"}'"],
-    "onDisable": ["angel-hooks fire plugin:disabled '{\"plugin\":\"angelkernel-neural\"}'"],
-    "onQuery": ["angel-neural synthesize \"$QUERY\""],
-    "onError": ["angel-neural error \"$ERROR\" \"$CONTEXT\""]
-  }
-}
