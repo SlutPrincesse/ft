@@ -1,0 +1,40 @@
+# Model providers configuration for Agent-Wun
+# Uses FreeRideV3's free-tier provider system
+providers:
+  - name: openrouter
+    type: openai_compatible
+    api_base: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+    models:
+      - meta-llama/llama-3.1-8b-instruct:free
+      - google/gemini-2.0-flash-exp:free
+      - mistralai/mistral-7b-instruct:free
+    priority: 10
+
+  - name: groq
+    type: openai_compatible
+    api_base: https://api.groq.com/openai/v1
+    api_key_env: GROQ_API_KEY
+    models:
+      - llama3-8b-8192
+      - gemma2-9b-it
+      - mixtral-8x7b-32768
+    priority: 8
+
+  - name: cerebras
+    type: openai_compatible
+    api_base: https://api.cerebras.ai/v1
+    api_key_env: CEREBRAS_API_KEY
+    models:
+      - llama3.1-8b
+    priority: 6
+
+  - name: ollama
+    type: ollama
+    api_base: http://localhost:11434
+    models:
+      - llama3.1
+      - codellama
+      - mistral
+    priority: 5
+    local: true

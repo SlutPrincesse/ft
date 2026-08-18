@@ -1,0 +1,42 @@
+{
+  "frameworks": {
+    "React 19": "Top curated skill collections: vercel-labs/agent-skills (react, nextjs, typescript - 40+ rules each, official Vercel patterns), thongdn-it/react-agent-skills (19 skills: react, nextjs, tailwind, shadcn, tanstack-query, zod, vitest, playwright). Stack per shared-skills (Mar 2026): Next.js 16 + Turbopack, React 19 RSC, TypeScript 5.9 strict, Tailwind v4, TanStack Query, Zustand, Vitest browser.",
+    "Next.js 16": "Next.js 16 App Router, RSC, Server Actions, caching. Docs: nextjs.org/docs/app/guides/mcp. Vercel React Best Practices (131k installs on skills.sh) - 40+ rules across 8 categories (waterfalls, bundle size, server-side perf)."
+  },
+  "top_skills_for_framework": [
+    "vercel-react-best-practices",
+    "nextjs",
+    "react",
+    "typescript",
+    "tanstack-query",
+    "zod",
+    "tailwind",
+    "shadcn",
+    "vitest",
+    "playwright"
+  ],
+  "top_mcp_server": [
+    "mcp-handler (Vercel MCP adapter for Next.js - npm 'mcp-handler', @modelcontextprotocol/sdk@1.26.0+)",
+    "nextjs-mcp (official Next.js MCP server, nextjs.org/docs/app/guides/mcp)"
+  ],
+  "lsp_servers": [
+    "typescript-language-server",
+    "eslint"
+  ],
+  "knowledge_bases": [
+    "https://react.dev",
+    "https://nextjs.org/docs",
+    "https://github.com/vercel-labs/agent-skills",
+    "https://tanstack.com/query",
+    "https://zod.dev"
+  ],
+  "top_skills_for_goal": [
+    "superpowers (plan-before-code, TDD, 217k+ stars)",
+    "grill-me (pre-code questioning, 116k+ stars)",
+    "tdd (red-green-refactor)",
+    "graphify (codebase knowledge graph, 71.5x fewer tokens/query)",
+    "caveman (token optimization, ~65% reduction)",
+    "planning-with-files (persistent task tracking)",
+    "vercel-react-best-practices"
+  ]
+}

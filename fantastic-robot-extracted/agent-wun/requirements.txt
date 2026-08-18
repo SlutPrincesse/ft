@@ -1,0 +1,36 @@
+# Agent-Wun core dependencies
+# Merged from integrated modules: loopx, taskplan, sme, trelix, reql
+
+# --- stdlib only (no external deps) ---
+# loopx: stdlib only
+# taskplan: stdlib only
+
+# --- SME dependencies ---
+numpy>=1.24
+httpx>=0.24
+fastapi>=0.100
+uvicorn>=0.23
+matplotlib>=3.7
+networkx>=3.0
+hnswlib>=0.8
+
+# --- Trelix dependencies ---
+tree-sitter>=0.23
+sqlite-vec>=0.1.6
+sentence-transformers>=3.0.0  # optional, for local embeddings
+scikit-learn>=1.5.0
+PyYAML>=6.0
+pydantic>=2.8.0
+pydantic-settings>=2.3.0
+tenacity>=8.5.0
+structlog>=24.1.0
+defusedxml>=0.7.1
+pathspec>=0.12.1
+typer>=0.12.0
+rich>=13.7.0
+openai>=1.35.0
+tiktoken>=0.7.0
+
+# --- ReQL dependencies ---
+tree-sitter>=0.25
+tree-sitter-language-pack>=1.8

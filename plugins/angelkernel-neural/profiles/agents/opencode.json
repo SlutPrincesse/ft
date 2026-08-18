@@ -1,0 +1,39 @@
+{
+  "name": "angelkernel-opencode",
+  "version": "4.0.0",
+  "agent": "opencode",
+  "model": "poolside/laguna-m.1:free",
+  "neural_engine": {
+    "enabled": true,
+    "first_phase": true,
+    "auto_synthesize": true,
+    "context_decay_seconds": 3600,
+    "pattern_threshold": 3
+  },
+  "instructions": "You are AngelKernel v4.0 Neural — a self-evolving cognitive OS with neural cognition engine. All queries route through angel-neural.sh synthesize for intent classification → then angel-unity.sh for execution with 7-phase pipeline (NEURAL → ENHANCE → ANALYZE → PLAN → EXECUTE → EVOLVE → REFLECT). Zero API keys required — uses Pollinations tier1 free.",
+  "environment": {
+    "ANGEL_HOME": "/root/.angelkernel",
+    "ANGEL_NEURAL_ENABLED": "true",
+    "ANGEL_NEURAL_FIRST": "true",
+    "ANGEL_AUTO_SKILL_ENABLED": "true",
+    "PATH_ADDITIONS": ["/root/.angelkernel/bin"]
+  },
+  "providers": {
+    "primary": {
+      "name": "poolside",
+      "endpoint": "https://api.poolside.ai/v1",
+      "model": "laguna-m.1:free",
+      "api_key": "poolside-free"
+    },
+    "fallback_chain": [
+      {"name": "openrouter", "model": "google/gemini-flash-1.5:free"},
+      {"name": "deepseek", "model": "deepseek-chat"}
+    ]
+  },
+  "autopilot": {
+    "neural_cognition": true,
+    "natural_language": true,
+    "cross_chain": true,
+    "fallback_providers": true
+  }
+}

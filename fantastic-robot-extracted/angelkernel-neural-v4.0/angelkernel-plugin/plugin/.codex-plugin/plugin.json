@@ -1,0 +1,40 @@
+{
+  "name": "angelkernel-neural",
+  "version": "1.0.0",
+  "description": "Full AngelKernel v4.0 Neural — autonomous neural cognition OS for AI coding agents. Intent classification, adaptive routing, 7-phase pipeline, auto-skill extraction, L1-L4 memory cortex, swarm intelligence, 73-event hook ecosystem, error-correction loop, pulse daemon.",
+  "author": {
+    "name": "AngelKernel",
+    "url": "https://github.com/angelkernel"
+  },
+  "homepage": "https://github.com/angelkernel/angelkernel-plugin",
+  "repository": "https://github.com/angelkernel/angelkernel-plugin",
+  "license": "MIT",
+  "keywords": [
+    "neural", "cognition", "intent", "routing", "auto-skill",
+    "hooks", "pipeline", "orchestrator", "agent", "autonomous"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks.json",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "AngelKernel Neural",
+    "shortDescription": "Neural cognition engine for AI agents",
+    "longDescription": "AngelKernel Neural provides a complete autonomous neural cognition OS for AI coding agents. Features include: intent classification across 9 categories with confidence scoring, adaptive routing to optimal agents and skills, a 7-phase unified execution pipeline (NEURAL → ENHANCE → ANALYZE → PLAN → EXECUTE → EVOLVE → REFLECT), automatic skill extraction from repeated patterns, L1-L4 memory cortex with TTL-based working memory, swarm intelligence for consensus and parallel execution, a 73-event universal hook ecosystem, error-correction loop (detect → diagnose → fix → learn), and a pulse daemon for health monitoring and auto-cleanup. All providers are FREE — zero API keys required.",
+    "developerName": "AngelKernel",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://github.com/angelkernel/angelkernel-plugin",
+    "privacyPolicyURL": "https://github.com/angelkernel/angelkernel-plugin",
+    "termsOfServiceURL": "https://github.com/angelkernel/angelkernel-plugin",
+    "defaultPrompt": [
+      "Classify this task and route to the right agent",
+      "Run the full 7-phase pipeline on this query",
+      "Detect patterns and extract a new skill"
+    ],
+    "brandColor": "#7C3AED",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}

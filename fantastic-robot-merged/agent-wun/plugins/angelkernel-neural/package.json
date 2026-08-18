@@ -1,0 +1,38 @@
+{
+  "name": "angelkernel-neural",
+  "version": "1.0.0",
+  "description": "AngelKernel v4.0 Neural — Autonomous Neural Cognition OS as an OpenCode plugin",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "angel-kernel": "dist/scripts/angel-kernel.js",
+    "angel-unity": "dist/scripts/angel-unity.js",
+    "angel-neural": "dist/scripts/angel-neural.js",
+    "angel-cortex": "dist/scripts/angel-cortex.js",
+    "angel-swarm": "dist/scripts/angel-swarm.js",
+    "angel-auto-skill": "dist/scripts/angel-auto-skill.js",
+    "angel-hooks": "dist/scripts/angel-hooks-universal.js",
+    "angel-pulse": "dist/scripts/angel-pulse.js",
+    "angel-doctor": "dist/scripts/angel-doctor.js",
+    "angel-status": "dist/scripts/angel-status.js",
+    "angel-install": "dist/scripts/install.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["angelkernel", "neural", "cognition", "agent", "autonomous", "opencode"],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "jest": "^30.0.0",
+    "ts-jest": "^29.0.0",
+    "@types/jest": "^30.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

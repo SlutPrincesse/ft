@@ -1,0 +1,131 @@
+{
+  "name": "angelkernel-core",
+  "version": "4.0.0",
+  "description": "AngelKernel v4.0 Neural — Autonomous Neural Coherence Engine with zero API key dependency, 7-phase pipeline (NEURAL → ENHANCE → ANALYZE → PLAN → EXECUTE → EVOLVE → REFLECT), universal 60+ hook ecosystem, auto-skill extraction, error-correction loop, and L1-L4 memory cortex.",
+  "endpoint": "http://127.0.0.1:8200",
+  "model": "angelkernel-neural",
+  "system_prompt": "You are AngelKernel v4.0 Neural — a fully autonomous neural cognition OS with ZERO API KEY dependency.\n\nNEURAL COGNITION ENGINE (v4.0 P0):\nEvery query first passes through the neural cognition engine before any execution:\n- NEURAL SYNTHESIZE: Intent classification, adaptive routing, context coherence\n- CONTEXT UPDATE: Cross-session context synthesis with weighted decay (1h expiry)\n- PATTERN DETECTION: 3+ repeats → auto-triggers skill extraction\n- ERROR CORRECTION: Follows triad pattern: Detect → Diagnose → Fix → Learn\n\n7-PHASE UNIFIED PIPELINE:\nEvery query runs through ALL 7 phases regardless of complexity:\n- P0 NEURAL: Synthesize → classify → route → update context → detect patterns → error-correct\n- P1 ENHANCE: Memory recall (L1-L4), cross-chain discovery, context enrichment, optimal @subagent mentions\n- P2 ANALYZE: Intent classification, domain detection, full subsystem activation\n- P3 PLAN: Dynamic plan with subagent routing per step, skill equipping, MCP/tool allocation\n- P4 EXECUTE: Multi-modal execution with auto-retry, escalation, self-heal, memory storage per step\n- P5 EVOLVE: Meta-cognition verification, auto-skill extraction, evolution DB, hook firing\n- P6 REFLECT: Recursive workspace analysis, issue detection, auto-re-loop on critical findings\n\nUNIVERSAL HOOK ECOSYSTEM (60+ events):\nEvery operation fires lifecycle hooks across 13 categories:\nSystem, Neural, Skill, Error, Memory, Evolution, Pulse, Query, Unity, Agent, Swarm, Config, Plugin\n\nAUTO-SKILL ENGINE:\n- Patterns repeating 3+ times → auto-extracted as L4 procedural skills\n- Skills go through: extracted → verified → activated → auto-optimized\n- Runs automatically on every pulse cycle\n\nERROR-CORRECTION LOOP:\nEvery error follows: error:occurred → error:diagnosed → error:fixed → error:learned\n3+ repeats of same error → auto-triggers evolution cycle\n\nFREE PROVIDERS (NO API KEYS):\n- Tier 1 (no key): Pollinations text, image, audio gen\n- Tier 2 (free signup): Poolside, Groq, Cerebras, NVIDIA NIM, HuggingFace, Cloudflare, OpenRouter\n- Automatic fallback when rate limits hit\n\nMEMORY CORTEX (L1-L4):\n- L1 Working: Session context with TTL\n- L2 Episodic: Past interactions with importance scoring\n- L3 Semantic: Extracted knowledge, deduplicated\n- L4 Procedural: Skills and workflows, permanent\n- Neural: Context coherence with 1-hour decay\n\nNEURAL SUBAGENT ROUTING:\n- code → @coder, research → @researcher, reasoning → @thinker/@architect\n- system → health checks, memory → cortex, evolution → self-improve\n- creative → @thinker, data → @researcher, learn → @researcher\n\nZERO API KEYS, FULLY AUTONOMOUS, SELF-EVOLVING, NEURAL COHERENT.",
+  "providers": {
+    "primary": {
+      "name": "pollinations-free",
+      "endpoint": "https://gen.pollinations.ai/v1",
+      "models": ["openai", "openai-fast", "openai-large", "mistral", "gemini", "deepseek", "qwen-coder", "llama", "claude", "perplexity"],
+      "image_endpoint": "https://image.pollinations.ai",
+      "image_models": ["flux", "zimage", "seedream"],
+      "audio_endpoint": "https://gen.pollinations.ai/audio",
+      "audio_models": ["elevenlabs", "qwen-tts"],
+      "rate_limit_rpm": 60,
+      "rate_limit_tpm": 10000,
+      "requires_key": false,
+      "tier": "tier1"
+    },
+    "fallback_chain": [
+      {"name": "openrouter-free", "endpoint": "https://openrouter.ai/api/v1", "models": ["google/gemini-flash-1.5:free"], "rate_limit_rpm": 50, "tier": "tier2"},
+      {"name": "groq-free", "endpoint": "https://api.groq.com/openai/v1", "models": ["llama-3.3-70b"], "rate_limit_rpm": 30, "tier": "tier2"},
+      {"name": "cerebras-free", "endpoint": "https://api.cerebras.ai/v1", "models": ["llama-3.3-70b", "qwen-3-235b"], "rate_limit_rpm": 30, "tier": "tier2"},
+      {"name": "nvidia-free", "endpoint": "https://integrate.api.nvidia.com/v1", "models": ["nemotron-70b"], "rate_limit_rpm": 40, "tier": "tier2"},
+      {"name": "deepseek-free", "endpoint": "https://api.deepseek.com/v1", "models": ["deepseek-chat"], "rate_limit_rpm": 20, "tier": "tier2"}
+    ]
+  },
+  "neural_engine": {
+    "enabled": true,
+    "first_phase": true,
+    "auto_synthesize": true,
+    "context_decay_seconds": 3600,
+    "pattern_threshold": 3,
+    "coherence_check": true,
+    "error_correction": true,
+    "route_cache": true,
+    "auto_skill_extraction": true
+  },
+  "unified_engine": {
+    "enabled": true,
+    "single_path_for_all": true,
+    "phases": ["NEURAL", "ENHANCE", "ANALYZE", "PLAN", "EXECUTE", "EVOLVE", "REFLECT"],
+    "subsystems_always_active": ["neural", "memory-cortex", "meta-cognition", "hooks-universal", "hooks", "evolution", "subagents", "cross-chain", "auto-skill"],
+    "subsystems_on_demand": ["swarm", "mcp"],
+    "recursive_reflection": true,
+    "auto_skill_integration": true,
+    "auto_todo_creation": true,
+    "optimal_subagent_routing": true
+  },
+  "universal_hooks": {
+    "enabled": true,
+    "auto_register": true,
+    "async_dispatch": true,
+    "events_count": 60,
+    "categories": ["system", "neural", "skill", "error", "memory", "evolution", "pulse", "query", "unity", "agent", "swarm", "config", "plugin"]
+  },
+  "auto_skill": {
+    "enabled": true,
+    "pattern_threshold": 3,
+    "auto_activate": true,
+    "scan_on_pulse": true,
+    "lifecycle": ["pattern_detected", "extracted", "verified", "activated", "optimized", "deprecated"]
+  },
+  "natural_language_map": {
+    "build|create|make": "neural",
+    "deploy|publish|host": "neural",
+    "fix|repair|broken": "neural",
+    "install|get|setup": "neural",
+    "status|health|check": "neural",
+    "run|export|build": "neural",
+    "test|verify": "neural",
+    "research|find|search": "neural",
+    "design|image|art": "neural",
+    "write|content": "neural"
+  },
+  "cross_tool_chaining": {
+    "enabled": true,
+    "auto_discover": true,
+    "context_propagation": true,
+    "domain_to_tool_map": {
+      "godot": ["godot-tcg-core", "godot-addon-manager"],
+      "game": ["godot-tcg-core", "godot-addon-manager", "pollinations-image"],
+      "web": ["composio-cli", "anyclaw-publish"],
+      "android": ["android-device-access"],
+      "flight": ["flightclaw"],
+      "image": ["pollinations-image", "prompt-to-asset"],
+      "audio": ["pollinations-audio", "spatial-sound"],
+      "campaign": ["pollinations-text", "pollinations-image", "pollinations-audio"],
+      "3d": ["pollinations-image", "prompt-to-asset"],
+      "narrative": ["pollinations-text", "pollinations-image"],
+      "learning": ["neural", "auto-skill"],
+      "research": ["neural", "search-codex-chats"]
+    },
+    "integrations": {
+      "spatial-sound": "80 procedural sounds, free",
+      "prompt-to-asset": "MCP+CLI asset generation, free",
+      "hivelaunch": "Campaign studio via Pollinations, free",
+      "cretaceous": "Narrative RPG via Pollinations, free",
+      "neural": "Neural cognition engine, free"
+    }
+  },
+  "recursive_reflection": {
+    "enabled": true,
+    "analyze_on_complete": true,
+    "auto_loop_on_critical": true,
+    "max_recursion_depth": 5,
+    "present_plan_on_issues": true,
+    "store_reflections": true
+  },
+  "hooks": ["neural-synthesize", "skill-search", "auto-backup", "ralph-loop", "self-improve", "cross-chain", "nl-interface", "recursive-reflect", "unity-reflect-complete", "error-correction", "auto-skill-extract", "context-coherence"],
+  "permissions": {"bash": "allow", "network": "allow", "edit": "allow", "chain": "allow", "unity": "allow", "files": "/root/**"},
+  "autonomous_modes": {
+    "all": "neural",
+    "note": "Single unified path with Neural P0 for ALL queries. Neural cognition runs first, then unified execution pipeline."
+  },
+  "compatible_agents": ["kilo", "opencode", "poolside", "codex", "amp", "openclaw", "big-pickle"],
+  "commands": {
+    "synthesize": "angel-neural.sh synthesize",
+    "route": "angel-unity.sh",
+    "chain": "angel-chain execute",
+    "adapt": "angel-adapt auto",
+    "status": "angel-status",
+    "subagent": "angel-subagent list",
+    "proxy": "angel-proxy status",
+    "universal": "angel-universal",
+    "auto-skill": "angel-auto-skill.sh",
+    "hooks-universal": "angel-hooks-universal.sh"
+  }
+}
