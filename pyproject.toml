@@ -1,22 +1,63 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.backends.legacy:build"
 
 [project]
-name = "agent-wun"
-version = "1.0.0"
-description = "Unified autonomous agent framework"
+name = "agnostic-harvester"
+version = "2.0.0"
+description = "Zero-cost LLM pre-processing and context optimization framework"
 readme = "README.md"
 license = {text = "MIT"}
-requires-python = ">=3.11"
-authors = [{name = "Agent-Wun Contributors"}]
+requires-python = ">=3.10"
+authors = [
+    {name = "AGNOSTIC-HARVESTER Team"}
+]
+keywords = ["llm", "agent", "harness", "context-optimization", "zero-cost"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "typing-extensions>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "black>=23.0",
+    "ruff>=0.1",
+    "mypy>=1.0",
+]
 
 [project.scripts]
-agent-wun = "core.main:main"
-agent-wun-api = "api.main:main"
+agnostic = "agnostic.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+agnostic = ["py.typed", "*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+asyncio_mode = "auto"
 
 [tool.ruff]
-line-length = 120
+line-length = 100
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
