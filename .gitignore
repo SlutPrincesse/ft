@@ -1,33 +1,17 @@
-# Dependencies
+__pycache__/
+*.pyc
+.venv/
+venv/
 node_modules/
-target/
 dist/
-dist-ssr/
-
-# Build outputs
-*.log
-*.pid
-
-# Editor
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Tauri
-src-tauri/target/
-src-tauri/WixTools/
-
-# Environment
+build/
+*.egg-info/
+.git/
+.gitignore
 .env
-.env.local
-.env.*.local
-
-# Temp
-/tmp/
-polyshard-ingest/
-filestore/
+.venv
+py_filestore/
+sandbox/
+*.db
+*.sqlite
+.DS_Store
